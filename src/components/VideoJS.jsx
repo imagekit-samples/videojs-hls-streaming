@@ -33,7 +33,7 @@ export default function VideoJS({ options, onReady }) {
       type: 'application/x-mpegURL'
     }],
     html5: {
-      hls: {
+      vhs: {
         enableLowInitialPlaylist: true
       }
     },
