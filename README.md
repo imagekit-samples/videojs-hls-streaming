@@ -1,4 +1,4 @@
-# React Video.js HLS Demo
+# Demo of Adaptive bitrate video streaming using HLS (m3u8) + Video.js + React
 
 A minimal React + Vite app with a single route **/hls-videojs-streaming** that plays an HLS Adaptive Bitrate stream created using ImageKit's Video API using Video.js.
 
@@ -6,6 +6,7 @@ A minimal React + Vite app with a single route **/hls-videojs-streaming** that p
 
 - Adds React Router with a single route:
   - `/hls-videojs-streaming` → renders a Video.js player
+
 - Plays this HLS manifest:
   ```
   https://ik.imagekit.io/ikmedia/example_video_train.mp4/ik-master.m3u8?tr=sr-360_480_720_1080
@@ -36,3 +37,4 @@ You should be redirected to **/hls-videojs-streaming** which shows the Video.js 
 
 - The player is instantiated/disposed in a small React wrapper (`src/components/VideoJS.jsx`).
 - To show the quality selector in the player, we use the videojs-hls-quality-selector (2.0.0+) plugin which is compatible with Video.js 8+. Also refer to the [comment here](https://github.com/chrisboustead/videojs-hls-quality-selector/issues/112#issuecomment-2511869225) to understand how the plugin is imported
+
