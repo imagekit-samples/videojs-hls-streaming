@@ -47,7 +47,8 @@ export default function VideoJS({ options, onReady }) {
       const containerElement = containerRef.current;
       
       // Create video element dynamically
-      const videoElement = document.createElement("video-js");
+      const videoElement = document.createElement("video");
+      videoElement.classList.add('video-js');
       videoElement.classList.add('vjs-big-play-centered');
       
       // Append to container
