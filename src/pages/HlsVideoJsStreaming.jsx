@@ -11,7 +11,10 @@ export default function HlsVideoJsStreaming() {
     preload: 'auto',
     responsive: true,
     fluid: true,
-    hlsManifest: HLS_SRC
+    sources: [{
+      src: HLS_SRC,
+      type: 'application/x-mpegURL'
+    }] 
   }
 
   return (

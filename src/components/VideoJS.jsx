@@ -28,10 +28,7 @@ export default function VideoJS({ options, onReady }) {
     muted: options?.muted ?? true,
     playsinline: true,
     poster: options?.poster,
-    sources: [{
-      src: options?.hlsManifest || "",
-      type: 'application/x-mpegURL'
-    }],
+    sources: options?.sources,
     html5: {
       vhs: {
         enableLowInitialPlaylist: true
